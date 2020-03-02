@@ -121,7 +121,7 @@ public class BackupRestoreUtil {
         return dir;
     }
 
-    public void backup(boolean[] what) {
+    public static void backup(boolean[] what) {
         new BackupTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, what[0], what[1]);
     }
 
